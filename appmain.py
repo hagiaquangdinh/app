@@ -15,7 +15,7 @@ def main():
                              max_value= 900
                              )
     if st.button("Calculate"):
-      result = fact(str(number))
+      result = Fraction(number)
       st.write(f"The fraction of {number} is: {result}")
 
 if __name__ == "__main__":    
