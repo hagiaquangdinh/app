@@ -21,15 +21,11 @@ def fact():
     else:
         return n * fact(n-1)
         
-def main():
-    st.title("Fraction Calculator")
-    number = st.number_input("Enter a number: ",
+st.title("Fraction Calculator")
+n = st.number_input("Enter a number: ",
                              min_value= 0,
                              max_value= 900
                              )
-    if st.button("Calculate"):
-      result = fract(number)
-      st.write(f"The fraction of {number} is: {result}")
-
-if __name__ == "__main__":    
-    main()
+if st.button("Calculate"):
+   r = fract(n)
+   st.write(f"The fraction of {n} is: {r}")
