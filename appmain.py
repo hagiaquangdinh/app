@@ -27,5 +27,5 @@ n = st.number_input("Enter a number: ",
                              max_value= 900
                              )
 if st.button("Calculate"):
-   r = fact(int(n))
+   r = fract(int(n))
    st.write(f"The fraction of {int(n)} is: {r}")
