@@ -6,3 +6,4 @@ Pandas
 NumPy
 Statsmodels
 NLTK 
+plotly.express
