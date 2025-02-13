@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import mlflow as ml
 from sklearn.model_selection import train_test_split
 
 st.title("Titanic Data Processing and Logging with MLflow")
