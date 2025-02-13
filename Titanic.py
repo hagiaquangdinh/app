@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import plotly.express as px
 from sklearn.model_selection import train_test_split
 
 st.title("Titanic Data Processing and Logging with MLflow")
@@ -25,7 +24,7 @@ new_data_split = pd.DataFrame(list(new_data.items()), columns=['Data Set', 'Size
 st.title("Titanic Data Processing and Logging with MLflow")
 st.table(new_data_split)
 
-fig = px.bar(new_data_split, x='Data Set', y='Size', title='Data Split', color='Data Set') # type: ignore
+fig = plotly.express.bar(new_data_split, x='Data Set', y='Size', title='Data Split', color='Data Set') # type: ignore
 st.plotly_chart(fig)
 
 st.write("Data Split")
