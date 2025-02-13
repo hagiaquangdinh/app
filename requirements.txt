@@ -1,1 +1,8 @@
 streamlit
+TensorFlow
+Keras
+Scikit-learn
+Pandas
+NumPy
+Statsmodels
+NLTK 
