@@ -31,5 +31,15 @@ with ml.start_run():
     ml.log_metric("test_size", len(X_test))
     ml.log_metric("val_size", len(X_val))
 
+    #Ghi lại dữ liệu
+    X_train.to_csv("X_train.csv", index=False)
+    X_test.to_csv("X_test.csv", index=False)
+    X_val.to_csv("X_val.csv", index=False)
+
+    ml.log_artifact("X_train.csv")
+    ml.log_artifact("X_test.csv")
+    ml.log_artifact("X_val.csv")
+
+
     # Log các artifact (ví dụ: mô hình, file dữ liệu)
     ml.log_artifact("titanic.csv")  # Thay thế bằng đường dẫn đến artifact của bạn
