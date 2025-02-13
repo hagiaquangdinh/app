@@ -24,7 +24,7 @@ new_data_split = pd.DataFrame(list(new_data.items()), columns=['Data Set', 'Size
 st.title("Titanic Data Processing and Logging with MLflow")
 st.table(new_data_split)
 
-fig = px.bar(new_data_split, x='Data Set', y='Size', title='Data Split', color='Data Set')
+fig = px.bar(new_data_split, x='Data Set', y='Size', title='Data Split', color='Data Set') # type: ignore
 st.plotly_chart(fig)
 
 st.write("Data Split")
